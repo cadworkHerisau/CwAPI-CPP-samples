@@ -39,7 +39,11 @@ CMyDialog::CMyDialog(CwAPI3D::ControllerFactory* aFactory, QWidget* parent)
 		  , mLabel{new QLabel(this)}
 		  , mFactory{aFactory}
 {
+	mFactory->getUtilityController()->printToConsole(L"Hello from cadwork C++ API");
+
 	dialogDesign();
+
 	connect(mButton, &QAbstractButton::clicked, this, &CMyDialog::buttonClick);
+
 	mElementIds = {mFactory->getElementController()->getActiveIdentifiableElementIDs()};
 }

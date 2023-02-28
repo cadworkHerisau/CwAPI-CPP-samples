@@ -8,8 +8,6 @@ set(CMAKE_AUTOUIC ON)
 
 
 set(CADWORK_VERSION 29)
-set(CMAKE_PREFIX_PATH "C:/source/cadlib/3rdParty/v_30.0/Qt/x64/lib/cmake")
-message(STATUS "CMAKE_PREFIX_PATH: ${CMAKE_PREFIX_PATH}")
 
 set(CW_WIN 1)
 
